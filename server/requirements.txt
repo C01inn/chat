@@ -1,0 +1,8 @@
+flask
+flask-socketio==4.3.0
+python-socketio==4.6.0
+python-engineio==3.13.0
+eventlet==0.30.0
+flask-cors
+pymongo
+gunicorn
