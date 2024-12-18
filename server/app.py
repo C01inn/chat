@@ -4,12 +4,8 @@ from flask_cors import CORS
 import time, pymongo, json
 
 # import config file
-#with open("config.json", "rb") as f:
-#    configData = json.load(f)
-configData = {
-    "secretKey": "rfyky4f6wslklcxhxra86xlovsg8nu",
-    "dbUrl": "mongodb://admin:8268Wrenfield@musicapp-shard-00-00.czdvw.azure.mongodb.net:27017,musicapp-shard-00-01.czdvw.azure.mongodb.net:27017,musicapp-shard-00-02.czdvw.azure.mongodb.net:27017/chat?ssl=true&replicaSet=atlas-88n74b-shard-0&authSource=admin&retryWrites=true&w=majority"
-}
+with open("config.json", "rb") as f:
+    configData = json.load(f)
 
 app = Flask(__name__)
 CORS(app)
